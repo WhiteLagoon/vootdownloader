@@ -25,7 +25,7 @@
 
 ### Step for download video using Commandline Interface ###
 * Open git bash
-* First clone the project using [git clone https://subhatanay@bitbucket.org/subhatanay/vootdownloader.git]
+* Clone the project as zip and extract it.
 * Go to vootdownloader directory and type command [sh cli_downloader.sh]
 * Now go to browser and hit www.voot.com and play one video and copy the playing video url
 * Now again go to git bash and paste the url and press enter
