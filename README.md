@@ -6,8 +6,6 @@
 * Available Chrome Extension 
 * Version 1.0
 
-### Prerequisite ###
-
 ### Step to install the chrome extension ###
 
 * Download the project as zip file and extract it.
