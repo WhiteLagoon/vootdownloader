@@ -1,0 +1,69 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Voot Video Downloader</title>
+  <style>
+    body {
+      width: 500px;
+      height : 95px;
+    }
+  </style>
+
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-purple.min.css" />
+    <script src="material.min.js"></script>
+</head>
+<body style="width:400px;" id="body">
+<div class="mdl-layout__container">
+  <div class="mdl-layout mdl-js-layout is-small-screen is-upgraded" data-upgraded=",MaterialLayout">
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <div class="page-content" style="padding:0px;">
+        <div class="mdl-grid mdl-cell mdl-cell--12-col" style="padding:0px;margin:0px;width:100%">
+          <div class="mdl-cell mdl-cell--12-col" style="margin:0px;width:100%;">
+            <center style="font-size: 1.3rem; font-family: Calibri;">
+              <div id="errorMessage" style="padding-top:35px"></div>
+            </center>
+            <div class="mdl-grid" id="success_video_show_card" style="padding:0px">
+              <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-card mdl-shadow--2dp" style="width:100%;min-height:70px !important">
+                  <div class="mdl-card__supporting-text" style="width:100%;padding:0px">
+                    <div id="download_progress" class="mdl-progress mdl-js-progress mdl-color--blue-600"></div>
+                    <div class="mdl-grid" style="padding:0px;margin:0px">
+                      <div class="mdl-cell mdl-cell--3-col" style="padding:0px;margin:0px">
+                        <div class="mdl-grid" style="padding:0px;margin:0px">
+                          <div class="mdl-cell mdl-cell--1-col" style="padding:0px;margin:0px">
+                            <img id="mediaImage" src="" style="width:53px;height:70px;"/>
+                          </div>
+                          <div class="mdl-cell mdl-cell--3-col" style="padding:0px;margin-top:12px;margin-right:0px;margin-bottom:0px">
+                            <span id="mediaName"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--1-col" style="text-align: center;margin-top:24px;margin-bottom:12px;">
+                        <a href="#"><i id="download_link" class="material-icons mdl-color-text--blue" style="font-size: 25px">file_download</i></a>
+                        <div id="spinner" class="mdl-spinner mdl-js-spinner is-active"></div>
+                      </div>
+                      <div class="mdl-tooltip" data-mdl-for="download_link" style="word-break:break-all;">
+                        Download Video
+                      </div>
+                    </div>
+                  </div>
+                    <div class="mdl-card__menu">
+                        <a href="#" id="cancelDownload" ><i class="material-icons mdl-color-text--red" style="font-size: 15px">close</i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="Element.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

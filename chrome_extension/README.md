@@ -1,0 +1,1 @@
+* Voot Downloader Chrome Extension *
