@@ -5,8 +5,8 @@
   "description": "Download Voot videos from Official website https://www.voot.com",
   "version": "1.0",
   "icons" : {
-	128 : "voot_icon.png"
-  }
+    "128": "voot_icon.png"
+  },
   "browser_action": {
     "default_icon": "voot_icon.png",
     "default_popup": "popup.html"
