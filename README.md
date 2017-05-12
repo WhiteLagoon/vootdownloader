@@ -10,8 +10,8 @@
 
 * Download the project as zip file and extract it.
 * Go to chrome_extension\Extension CRX.
-* Open chrome and type chrome://extension and press enter.
-* Drag and drop the vootdownloader.crx file to chrome.
+* Open chrome and type chrome://extensions and press enter.
+* Drag and drop the vootdownloader.crx file to chrome(just drag and drop to the window it will install automatically).
 * Add the extension
 
 ### Step to download video in chrome extension ###
