@@ -4,7 +4,7 @@
 
 * Commandline video downloader for Windows
 * Available Chrome Extension 
-* Version 1.0
+* Version 1.0.0
 
 ### Step to install the chrome extension ###
 
