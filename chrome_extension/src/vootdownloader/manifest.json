@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Voot Video Downloader",
-  "description": "Download Voot videos from Official website https://www.voot.com",
-  "version": "1.0",
+  "name": "Online Video Strem Downloader",
+  "description": "Download Voot videos from Official website https://www.voot.com , http://www.hotstar.com/ , http://www.dailymotion.com",
+  "version": "2.0",
   "icons" : {
     "128": "voot_icon.png"
   },
@@ -12,10 +12,13 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["background.js","XhrLoader.js","Fragment.js","m3u8-parser.min.js","MediaDetails.js","Decrypter.js","FragmentManager.js"]
+    "scripts": ["XhrLoader.js","Fragment.js","m3u8-parser.min.js","MediaDetails.js","Decrypter.js","FragmentManager.js","TaskManager.js","background.js"]
   },
   "permissions": [
     "activeTab",
-    "https://www.voot.com/*"
+    "webRequest",
+    "<all_urls>",
+    "storage",
+    "unlimitedStorage"
   ]
 }

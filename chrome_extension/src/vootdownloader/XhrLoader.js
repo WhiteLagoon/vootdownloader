@@ -11,7 +11,7 @@ function XhrLoader(url, responseType) {
 }
 
 XhrLoader.prototype.load = function() {
-    console.log("loading url content");
+    //console.log("loading url content");
     var xhr = new XMLHttpRequest();
     xhr.open("GET", this.url, true);
     if (this.responseType === "arraybuffer") {
@@ -20,8 +20,10 @@ XhrLoader.prototype.load = function() {
     xhr.onreadystatechange = onReadyStateChange.bind(this);
     xhr.onerror = onRequestTimeOut.bind(this);
     xhr.send();
+    return function () {
+        xhr.abort();
+    }
 }
-
 
 function onReadyStateChange(event) {
     var target = event.currentTarget;
@@ -37,15 +39,10 @@ function onReadyStateChange(event) {
             }
         }
     } else if (target.status >= 400 && target.status < 500) {
-        if (this.noRetry < this.maxRetry) {
-            this.noRetry++;
-            return this.load();
-        } else {
-            var onError = this.callbacks.onError;
-            if (onError) {
-                var response = target.response;
-                onError(response);
-            }
+        var onError = this.callbacks.onError;
+        if (onError) {
+            var response = target.response;
+            onError(response);
         }
     }
 }

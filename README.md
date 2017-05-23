@@ -1,10 +1,10 @@
-# Voot Video Downloader #
+# Video Stream Downloader For Hotstar,Voot and Dailymotion  #
 
 ### Description ###
 
 * Commandline video downloader for Windows
-* Available Chrome Extension 
-* Version 1.0.0
+* Available Chrome Extension and command line downloader for premium Hotstar Videos(not for all) 
+* Version 2.0.0
 
 ### Step to install the chrome extension ###
 

@@ -14,10 +14,16 @@ function Fragment(baseuri, segmenturi, segmentid) {
 }
 
 Fragment.prototype.loadSegment = function() {
-    var loader = new XhrLoader(this.baseURI + "/" + this.segmentUri, "arraybuffer");
+    var loader = new XhrLoader(this.baseURI  + this.segmentUri, "arraybuffer");
     loader.callbacks.onSuccess = onFragmentLoadCompleted.bind(this);
     loader.callbacks.onError = onFragmentLoadError.bind(this);
-    loader.load();
+    this.cancelRequest = loader.load();
+}
+
+Fragment.prototype.cancelFragmentRequest = function () {
+    if (this.cancelRequest) {
+        this.cancelRequest();
+    }
 }
 
 Fragment.prototype.decryptSegment = function(fragment) {
@@ -46,10 +52,12 @@ Fragment.prototype.addKeyToSegment = function(key, keymethod) {
 }
 
 function onFragmentLoadCompleted(fragment) {
+    this.decryptedContent = fragment;
     var onLoadComplete = this.callbacks.onLoadComplete;
     if (onLoadComplete) {
         onLoadComplete(this.segmentid);
-        this.decryptSegment(fragment);
+        if (this.enc)
+            this.decryptSegment(fragment);
     }
 }
 
@@ -76,5 +84,4 @@ function onFragmentDecryptionError(error) {
 
 function onFragmentError(errorMessage) {
     console.log(errorMessage);
-    sendMessageToPopup("ERROR_RESPONSE",{statusText : "Oops.. Error occured.."});
 }
