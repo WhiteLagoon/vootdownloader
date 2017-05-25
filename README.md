@@ -14,6 +14,13 @@
 * Drag and drop the vootdownloader.crx file to chrome(just drag and drop to the window it will install automatically).
 * Add the extension
 
+### Step to install the Unpacked source file as chrome extension ###
+
+* Download the project as zip file and extract it.
+* Open chrome and type chrome://extensions
+* Click "Load Unpacked Extension" button.
+* Then Browse to the "{extracted folder after you download}\ALL_DOWNLOADS\chrome_extension\src\vootdownloader" folder and select it.     
+
 ### Step to download video in chrome extension ###
 * First open www.voot.com and open a video that you want to download.
 * click the extension and it will show you the current video.
@@ -31,3 +38,6 @@
 
 ### Limitation ###
 * It will only run on windows
+* It may be Uninstalled automatically as we do not publish the CRX file in Chrome.
+
+
