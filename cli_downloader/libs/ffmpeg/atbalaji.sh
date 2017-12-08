@@ -21,5 +21,5 @@ echo "Media Url : $mediaPlayListURL"
 echo "Media Title : $title"
 
 $(./youtube_dl.sh "$mediaPlayListURL" -o "$title_episode_$MEDIA_ID.mp4")
-mv "$MEDIA_ID.mp4" ../..
+mv "$MEDIA_ID.mp4" altbalaji_videos/
 echo "Download successfully"

@@ -1,10 +1,11 @@
-# Video Stream Downloader For Hotstar,Voot and Dailymotion  #
+# Video Stream Downloader For Hotstar,Voot and Dailymotion,AltBalaji  #
 
 ### Description ###
 
 * Commandline video downloader for Windows
 * Available Chrome Extension and command line downloader for premium Hotstar Videos(not for all) 
 * Version 2.0.0
+* Added new CLI downloader for AltBalaji Videos
 
 ### Step to install the chrome extension ###
 
@@ -35,6 +36,14 @@
 * Now go to browser and hit www.voot.com and play one video and copy the playing video url
 * Now again go to git bash and paste the url and press enter
 * Video will be downloaded under vootdownloader directory
+
+### Execute AltBalaji CLI downloader from Click
+* After clonning this project please go inside libs/ffmpeg/ folder.
+* Open git bash
+* write command sh atbalaji.sh and press enter.
+* Go to alt balaji webside select a episode . Url should be in https://<domain>/episode/<id> format.
+* Copy that and paste in command line and press enter. download will start.
+* Video will be available in libs\ffmpeg\altbalaji_videos\ folder
 
 ### Limitation ###
 * It will only run on windows
