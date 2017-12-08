@@ -1,0 +1,13 @@
+hotstar videos api
+
+video details : 
+http://account.hotstar.com/AVS/besc?action=GetAggregatedContentDetails&appVersion=5.0.40&channel=PCTV&contentId=1000087393
+
+video cdn :
+http://getcdn.hotstar.com/AVS/besc?action=GetCDN&appVersion=5.0.40&asJson=Y&channel=TABLET&id=1000087393&type=VOD
+
+voot videos api 
+
+https://wapi.voot.com/ws/ott/getMediaInfo.json?platform=Web&pId=2&mediaId=490721
+
+
