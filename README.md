@@ -37,7 +37,7 @@
 * Now again go to git bash and paste the url and press enter
 * Video will be downloaded under vootdownloader directory
 
-### Execute AltBalaji CLI downloader from Click
+### Execute AltBalaji CLI downloader from CLI
 * After clonning this project please go inside libs/ffmpeg/ folder.
 * Open git bash
 * write command sh atbalaji.sh and press enter.
